@@ -1,0 +1,157 @@
+body{
+    background-color:#b6a8b6;
+
+}
+.navbar {
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 15px 20px;
+  color: white;
+}
+.navbar ul {
+  list-style: none;
+   display: flex;
+  gap: 20px; 
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+.hero {
+  background-image: url('banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+.btn {
+  background: #ff6600;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+
+
+.service-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: white;
+}
+.card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+
+
+.about-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.about-container img {
+  width: 50%;
+  border-radius: 10px;
+}
+.about-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.testimonial {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+.testimonial:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  margin: auto;
+}
+input, textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  background: #ff6600;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #cc5200;
+}
+
+
+footer {
+  background: #1a1a1a;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #ff6600;
+}
+
+
+@media (max-width: 768px) {
+  .service-cards {
+    flex-direction: column;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
