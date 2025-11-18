@@ -1,0 +1,51 @@
+/* Background */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #00172a, #00335a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Rocket container */
+.rocket {
+    position: relative;
+    width: 130px;
+
+    animation: float 2.5s infinite ease-in-out;
+}
+
+/* Rocket up-down animation */
+@keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-40px); }
+    100% { transform: translateY(0); }
+}
+
+/* Flame shape */
+.flame {
+    position: absolute;
+    width: 20px;
+    height: 35px;
+    left: 55px;
+    bottom: -20px;
+    background: radial-gradient(circle, orange, red);
+    border-radius: 50% 50% 60% 60%;
+    transform-origin: top center;
+
+    animation: flameMove 0.3s infinite alternate;
+}
+
+/* Flame flicker animation */
+@keyframes flameMove {
+    0% {
+        transform: scaleY(0.8);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scaleY(1.2);
+        opacity: 1;
+    }
+}

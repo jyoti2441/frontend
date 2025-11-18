@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rocket Animation</title>
+    <style>
+        body{
+            background:black;
+            overflow:hidden;
+            margin:0;
+        }
+
+        .rocket{
+            width:150px;
+            position:absolute;
+            bottom:-200px;
+            left:50%;
+            transform:translateX(-50%);
+            animation: fly 5s linear infinite;
+        }
+
+        @keyframes fly{
+            0%{ bottom:-200px; }
+            100%{ bottom:120%; }
+        }
+    </style>
+</head>
+<body>
+
+<img class="rocket" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj4KPHBvbHlnb24gcG9pbnRzPSIxMDAsMTAgMTMwLDgwIDEwMCw3MCA3MCw4MCIgZmlsbD0icmVkIi8+CjxyZWN0IHg9IjkwIiB5PSI3MCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjgwIiBmaWxsPSJncmF5Ii8+Cjxwb2x5Z29uIHBvaW50cz0iMTAwLDE1MCAxMjAsMTkwIDgwLDE5MCIgZmlsbD0ib3JhbmdlIi8+Cjwvc3ZnPg==" />
+
+</body>
+</html>
