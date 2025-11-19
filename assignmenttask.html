@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Assignment</title>
+    <link rel="stylesheet" href="style4.css">
+    <script src="script4.js"></script>
+</head>
+<body>
+
+<h1>DOM Assignment</h1>
+
+<!-- TASK-1 -->
+<div class="task-section">
+    <h2>Task 1: Dynamic To-Do List</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button id="addTaskBtn">Add Task</button>
+
+    <ul id="taskList"></ul>
+</div>
+
+<!-- TASK-2 -->
+<div class="task-section">
+    <h2>Task 2: Live Character Counter</h2>
+
+    <textarea id="textArea" rows="5" maxlength="100"></textarea>
+    <p id="charCount">Characters left: 100</p>
+</div>
+
+<!-- TASK-3 -->
+<div class="task-section">
+    <h2>Task 3: Image Carousel</h2>
+
+    <div id="carousel">
+        <img id="slide" src="">
+    </div>
+    <br>
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+</div>
+
+<!-- TASK-4 -->
+<div class="task-section">
+    <h2>Task 4: Registration Form</h2>
+
+    <form id="regForm">
+        Name: <br>
+        <input type="text" id="name"><br>
+        <span class="error" id="nameErr"></span><br>
+
+        Email: <br>
+        <input type="text" id="email"><br>
+        <span class="error" id="emailErr"></span><br>
+
+        Password: <br>
+        <input type="password" id="pass"><br>
+        <span class="error" id="passErr"></span><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<!-- TASK-5 -->
+<div class="task-section">
+    <h2>Task 5: Product Filter</h2>
+
+    <input type="text" id="searchBox" placeholder="Search products..."><br><br>
+
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('electronics')">Electronics</button>
+    <button onclick="filterProducts('clothing')">Clothing</button>
+
+    <ul id="productList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
